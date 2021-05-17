@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#7952b3">
+    <meta charset="UTF-8">
+
+    <title>{% block title %}SalesOn{% endblock %}</title>
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+
+</head>
+<body>
+{% include '_menu.html.twig' %}
+{% block body %}{% endblock %}
+{% include '_footer.html.twig' %}
+</body>
+</html>
